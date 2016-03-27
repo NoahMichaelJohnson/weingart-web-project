@@ -226,7 +226,6 @@ span{
     display: block;
     text-align: right;
     background: #000;
-    color: #fff;
 }
 
 aside.pattern{
@@ -237,6 +236,9 @@ aside.pattern{
   background-size: cover;
 }
 
+section#Didacta-Eurodidact-Image img {
+    width: 20%;
+}
 
 footer {
     background: #fff;
