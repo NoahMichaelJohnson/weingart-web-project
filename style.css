@@ -8,13 +8,13 @@ body{
     clear: both;
 }
 
-h1{
+h1 {
     font-size: 4em;
     text-align: center;
     margin: 1em 3em 1em 3em;
 }
 
-h1 br{
+h1 br {
     display: none;
 }
 
@@ -37,25 +37,22 @@ nav li:last-child{
     padding-right: 0;
 }
 
-img{
+img {
     width: 100%;
-
 }
 
-section{
+section {
     height: 100%;
     position: relative;
-
     background: #f9f6f2;
     width: 100%;
 }
 
-section div{
+section div {
     width: 40%;
     display: block;
     float: right;
     padding: 0 8% 0 2%;
-
 }
 
 section h2 {
@@ -80,6 +77,14 @@ section figure{
     width: 50%;
     float: right;
     margin-bottom: 1.2em;
+}
+
+.pattern figure {
+	width: 20em;
+}
+
+.pattern figure span {
+	text-align: left;
 }
 
 section figcaption p{
@@ -107,10 +112,12 @@ section.alternate div p{
 }
 
 section.alternate aside{
-    float: right;
     padding: 0 8% 0 2%;
     position: relative;
-    bottom: auto;
+    height: 100vh;
+    padding-top: 30vh;
+    background-image: url("img/weingart_pattern_sized.jpg");
+    background-size: cover;
 }
 
 header{
