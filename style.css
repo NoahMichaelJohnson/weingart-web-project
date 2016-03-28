@@ -110,20 +110,12 @@ section.alternate div p{
     margin-bottom: 1em;
 }
 
-section.alternate aside.pattern {
+section.alternate#beginnings aside.pattern {
     padding: 0 8% 0 2%;
     position: relative;
     height: 100vh;
     padding-top: 30vh;
     background-image: url("img/weingart_pattern_sized.jpg");
-    background-size: cover;
-}
-
-section.alternate aside.japantrade {
-    padding: 0 8% 0 2%;
-    position: relative;
-    height: 100vh;
-    padding-top: 30vh;
     background-size: cover;
 }
 
@@ -184,7 +176,7 @@ aside.pattern{
   background-size: cover;
 }
 
-section#Didacta-Eurodidact-Image img {
+section#Didacta-Eurodidact-Image img{
     display: block;
     margin: 2.5em auto;
     width: 60%;
@@ -193,6 +185,18 @@ section#Didacta-Eurodidact-Image img {
 section.alternate#The-Journey {
     background: #ffe5d4;
     height: 100vh;
+}
+
+section.alternate#The-Journey aside.japantrade {
+    padding: 0 8% 0 2%;
+    position: relative;
+    left: 0;
+    height: 100vh;
+    padding-top: 2em;
+}
+
+section.alternate#The-Journey aside figcaption{
+    margin-top: 1.3em
 }
 
 footer {
