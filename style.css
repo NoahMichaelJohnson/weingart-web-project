@@ -113,7 +113,7 @@ section div {
     padding: 0 8% 0 2%;
 }
 
-section h2 {
+section h2{
     max-width: 400px;
 }
 
@@ -137,11 +137,11 @@ section figure{
     margin-bottom: 1.2em;
 }
 
-.pattern figure {
+.pattern figure{
 	width: 20em;
 }
 
-.pattern figure span {
+.pattern figure span{
 	text-align: left;
 }
 
@@ -149,7 +149,7 @@ section figcaption p{
     margin-bottom: 0.5em;
 }
 
-section.alternate {
+section.alternate{
     background: #98cee5;
 }
 
@@ -162,7 +162,6 @@ section.alternate div{
 section.alternate div h2,
 section.alternate div p{
     margin: 0 0 0 auto;
-
 }
 
 section.alternate div p{
@@ -237,7 +236,13 @@ aside.pattern{
 }
 
 section#Didacta-Eurodidact-Image img {
-    width: 20%;
+    display: block;
+    margin: 2.5em auto;
+    width: 60%;
+}
+
+section.alternate#The-Journey {
+    background: #ffe5d4;
 }
 
 footer {
