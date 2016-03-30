@@ -1,8 +1,9 @@
 /*** CUSTOM CODE ***/
 body{
+    font-family: Helvetica, Arial, sans-serif;
     width:100%;
     height:100%;
-    background: #ffe5d4;
+    background: #ffe0c7;
 }
 
 .clear {
@@ -19,18 +20,48 @@ h1 br {
     display: none;
 }
 
-nav ul {
-  list-style: none;
-  text-align: center;
-  padding: 0;
-  margin: 0;
+ul {
+/*    display: block;*/
+    list-style-type: none;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+/*    background-color: #ffe5d4;*/
 }
-nav li {
+
+li {
     display: inline-block;
-    margin-right: 1em;
-    margin-bottom: 2em;
-    border-right: 1px solid black;
-    padding-right: 1em;
+    padding: 1em;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 1.3em;
+/*    margin: 1.3em;*/
+    text-decoration: none;
+    transition: .3s linear;
+}
+
+
+/*
+li a:hover {
+    transition-duration: 0.3s;
+    transition-timing-function: ease-in;
+    background-color: #f2d4c0;
+    opacity: 0.2;
+}
+*/
+
+li a:hover {
+    transition: .3s linear background;
+/*    font-weight: bold;*/
+    text-align: center;
+    border-style: solid;
+    border-width: 2px;
+    border-color: #f2d4c0;
 }
 
 nav li:last-child{
@@ -38,15 +69,35 @@ nav li:last-child{
     padding-right: 0;
 }
 
+a:link{
+    font-size: 0.95em;
+    color: black;
+    text-decoration: none;
+}
+
+a:visited{
+    font-size: 0.95em;
+    color: black;
+    text-decoration: none;
+}
+
+/*
+a:hover{
+    background: #000;
+    opacity: 0.2;
+}
+*/
+
 img {
     width: 100%;
 }
 
 section {
-    height: 100%;
+/*    height: 100%;*/
     position: relative;
     background: #f9f6f2;
-    width: 100%;
+    width: 100vw%;
+    padding-bottom: 4em;
 }
 
 section div {
@@ -77,14 +128,14 @@ section aside{
 section figure{
     width: 50%;
     float: right;
-    margin-bottom: 1.2em;
+    margin-bottom: 5.3em;
 }
 
-.pattern figure{
-	width: 20em;
+.quote figure{
+	width: 26.5em;
 }
 
-.pattern figure span{
+.quote figure span{
 	text-align: left;
 }
 
@@ -92,8 +143,14 @@ section figcaption p{
     margin-bottom: 0.5em;
 }
 
-section.alternate{
-    background: #98cee5;
+section.alternate#beginnings {
+    padding-bottom: 2em;
+    background: #7dd7ef;
+}
+
+section.alternate aside.quote figure{
+    float: left;
+    margin: 16em auto;
 }
 
 section.alternate div{
@@ -110,6 +167,13 @@ section.alternate div p{
     margin-bottom: 1em;
 }
 
+section.alternate#beginnings aside.quote {
+    padding: 0 8% 0 2%;
+    position: relative;
+    height: 100vh;
+    padding-top: 2em;
+}
+/*
 section.alternate#beginnings aside.pattern {
     padding: 0 8% 0 2%;
     position: relative;
@@ -118,6 +182,7 @@ section.alternate#beginnings aside.pattern {
     background-image: url("img/weingart_pattern_sized.jpg");
     background-size: cover;
 }
+*/
 
 header{
     padding: 2em 0 1em 0;
@@ -153,10 +218,9 @@ p{
     font-style: italic;
 }
 
-blockquote{
-    font-size: 2em;
+blockquote {
+    font-size: 3em;
     line-height: 1.15em;
-    background: #000;
     color: #fff;
     display: inline;
 }
@@ -165,38 +229,128 @@ span{
     font-size: 0.6em;
     display: block;
     text-align: right;
-    background: #000;
 }
 
-aside.pattern{
-    background: url(weingart_pattern_sized.jpg) no-repeat center center ;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
+section#Didacta-Eurodidact-Image{
+    background: #e0e0e2;
 }
 
 section#Didacta-Eurodidact-Image img{
     display: block;
-    margin: 2.5em auto;
+    margin: 0 auto;
     width: 60%;
+    padding: 3em 0 3em 0;
 }
 
 section.alternate#The-Journey {
-    background: #ffe5d4;
-    height: 100vh;
+    background: #ffe0c7;
+/*    height: 58vh;*/
+    height: 58vh;
 }
 
-section.alternate#The-Journey aside.japantrade {
-    padding: 0 8% 0 2%;
+section.alternate#The-Journey aside
+section.alternate#The-Journey figure{
+    margin: auto 0;
+    padding: auto 0;
+}
+
+section.alternate#The-Journey aside.japantrade{
+    padding: 0 8% 0 0%;
     position: relative;
-    left: 0;
-    height: 100vh;
+/*    padding-top: 2em;*/
+}
+
+section.alternate#The-Journey aside.japantrade figure{
+    float:left;
     padding-top: 2em;
 }
 
 section.alternate#The-Journey aside figcaption{
     margin-top: 1.3em
+}
+
+section#UCLA-Cover-Image img{
+    display: block;
+    margin: 0 auto;
+    width: 60%;
+    padding: 3em 0 3em 0;
+}
+
+
+section.alternate#newwave {
+    background: #7dd7ef;
+/*    height: 100vh;*/
+}
+
+/*
+section.alternate#newwave div.flowtext{
+    padding: 0 8% 0 0%;
+    position: relative;
+    float: left;
+    height: 100vh;
+    padding-top: 4.5em;
+}
+
+section.alternate#newwave div.flowtext p{
+    width: 400px;
+}
+
+section.alternate#newwave div.flowtext div{
+    float:left;
+    padding: 0;
+}
+*/
+
+
+
+section.alternate#newwave aside
+section.alternate#newwave figure{
+    margin: auto 0;
+    padding: auto 0;
+}
+
+section.alternate#newwave aside.dasplakat{
+    padding: 0 8% 0 0%;
+    position: relative;
+/*    padding-top: 2em;*/
+}
+
+section.alternate#newwave aside.dasplakat figure{
+    float:left;
+    padding-top: 2em;
+}
+
+section.alternate#newwave aside.dasplakat figcaption{
+    margin-top: 1.3em
+}
+
+
+
+
+
+section#Michael-Sohn-Grid-Image img{
+    display: block;
+    margin: 0 auto;
+    width: 60%;
+    padding: 3em 0 3em 0;
+}
+
+section#Kunst-Kredit-Image img{
+    display: block;
+    margin: 0 auto;
+    width: 60%;
+    padding: 3em 0 3em 0;
+}
+
+div#facesig{
+    width: 40%;
+    margin: 4em auto;
+    margin-bottom: 16em;
+}
+
+div#facesig img#sig{
+    width: 70%;
+    float: right;
 }
 
 footer {
@@ -211,4 +365,29 @@ footer {
 footer p {
     font-size: .6em;
     padding: 1em;
+}
+
+
+
+/**** MOBILE ****/
+
+@media screen and (max-width: 600px){
+    
+nav ul li {
+    float: none;
+    position: relative;
+    width: 100%;
+    min-width: auto;
+    max-width: none;
+}
+        
+/*
+nav ul li ul {
+    position: static;
+    height: 2em;
+    overflow: hidden;
+    display: block;
+}
+*/
+
 }
